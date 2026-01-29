@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     id: '7',
     title: 'Generous.rocks',
-    description: 'Next.js hackathon winner - AI-powered generosity platform for sharing and receiving.',
+    description: 'Next.js hackathon project - AI-powered generosity platform for sharing and receiving.',
     tags: ['Next.js', 'AI', 'React', 'Hackathon'],
     stars: 28,
     forks: 9,
