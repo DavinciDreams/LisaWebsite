@@ -22,15 +22,17 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   cursor: pointer;
 }
 
 .project-card:hover,
 .project-card.hovered {
-  box-shadow: 0 25px 60px rgba(139, 92, 246, 0.2);
-  border-color: rgba(139, 92, 246, 0.3);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3),
+              0 0 60px rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.5);
 }
 
 .project-image {

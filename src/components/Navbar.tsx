@@ -7,7 +7,7 @@ const Navbar = () => {
     const handleScroll = () => {
 
       // Update active section
-      const sections = ['about', 'projects', 'contact']
+      const sections = ['about', 'projects', 'social-graph', 'contact']
       for (const section of sections) {
         const element = document.getElementById(section)
         if (element) {
@@ -50,10 +50,17 @@ const Navbar = () => {
             <span className="nav-text">Projects</span>
           </button>
           <button
+            onClick={() => scrollToSection('social-graph')}
+            className={`nav-link ${activeSection === 'social-graph' ? 'active' : ''}`}
+          >
+            <span className="nav-number">03</span>
+            <span className="nav-text">Social Graph</span>
+          </button>
+          <button
             onClick={() => scrollToSection('contact')}
             className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
           >
-            <span className="nav-number">03</span>
+            <span className="nav-number">04</span>
             <span className="nav-text">Contact</span>
           </button>
         </div>

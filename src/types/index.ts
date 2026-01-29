@@ -23,3 +23,33 @@ export interface SocialLink {
   url: string
   icon: string
 }
+
+export interface GraphNode {
+  id: string
+  label: string
+  type: 'person' | 'project' | 'organization' | 'skill'
+  size: number
+  color: string
+  url?: string
+  description?: string
+  x?: number
+  y?: number
+  fx?: number | null
+  fy?: number | null
+  index?: number
+  vx?: number
+  vy?: number
+}
+
+export interface GraphEdge {
+  id: string
+  source: string
+  target: string
+  weight: number
+  label?: string
+}
+
+export interface SocialGraph {
+  nodes: GraphNode[]
+  edges: GraphEdge[]
+}

@@ -7,26 +7,6 @@ const Projects = () => {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null)
   const [ref, isVisible] = useIntersectionObserver(0.1)
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const card = e.currentTarget
-    const rect = card.getBoundingClientRect()
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
-
-    const centerX = rect.width / 2
-    const centerY = rect.height / 2
-
-    const rotateX = (y - centerY) / 10
-    const rotateY = (centerX - x) / 10
-
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`
-  }
-
-  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    e.currentTarget.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)'
-    setHoveredCard(null)
-  }
-
   return (
     <section id="projects" className="projects">
       <div className="container">
@@ -36,11 +16,8 @@ const Projects = () => {
             <div
               key={project.id}
               className={`project-card ${hoveredCard === project.id ? 'hovered' : ''}`}
-              onMouseMove={(e) => {
-                setHoveredCard(project.id)
-                handleMouseMove(e)
-              }}
-              onMouseLeave={handleMouseLeave}
+              onMouseEnter={() => setHoveredCard(project.id)}
+              onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="project-image">
                 {project.videoUrl?.includes('youtube') || project.videoUrl?.includes('youtu.be') ? (

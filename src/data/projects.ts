@@ -10,7 +10,7 @@ export const projects: Project[] = [
     forks: 43,
     url: 'https://github.com/EtherealEngine/Digital-Beings',
     gradient: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
-    imageUrl: '/images/digital-beings-robot.jpg'
+    imageUrl: '/images/digital-beings-robot.png'
   },
   {
     id: '2',
