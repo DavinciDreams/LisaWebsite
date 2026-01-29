@@ -8,6 +8,7 @@ export interface Project {
   url: string
   gradient: string
   videoUrl?: string
+  imageUrl?: string
 }
 
 export interface AboutCard {

@@ -49,7 +49,8 @@ export const projects: Project[] = [
     stars: 17,
     forks: 8,
     url: 'https://github.com/DavinciDreams/Thales',
-    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #f59e0b 100%)'
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #f59e0b 100%)',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Illustrerad_Verldshistoria_band_I_Ill_107.jpg/960px-Illustrerad_Verldshistoria_band_I_Ill_107.jpg'
   },
   {
     id: '6',
@@ -64,6 +65,17 @@ export const projects: Project[] = [
   },
   {
     id: '7',
+    title: 'Generous.rocks',
+    description: 'Next.js hackathon winner - AI-powered generosity platform for sharing and receiving.',
+    tags: ['Next.js', 'AI', 'React', 'Hackathon'],
+    stars: 28,
+    forks: 9,
+    url: 'https://generous.rocks/about',
+    gradient: 'linear-gradient(135deg, #10b981 0%, #06b6d4 100%)',
+    videoUrl: '/generous.mp4'
+  },
+  {
+    id: '8',
     title: 'More Projects',
     description: 'Explore 200+ repositories covering AI, decentralized systems, and cutting-edge tech.',
     tags: ['Various', 'Open Source', 'Full Stack'],

@@ -53,6 +53,12 @@ const Projects = () => {
                     onMouseEnter={(e) => e.currentTarget.play()}
                     onMouseLeave={(e) => e.currentTarget.pause()}
                   />
+                ) : project.imageUrl ? (
+                  <img
+                    className="project-image-img"
+                    src={project.imageUrl}
+                    alt={project.title}
+                  />
                 ) : (
                   <div
                     className="project-gradient"
