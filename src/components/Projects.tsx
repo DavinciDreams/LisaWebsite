@@ -43,7 +43,15 @@ const Projects = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="project-image">
-                {project.videoUrl ? (
+                {project.videoUrl?.includes('youtube') || project.videoUrl?.includes('youtu.be') ? (
+                  <iframe
+                    className="project-video"
+                    src={project.videoUrl}
+                    title={project.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : project.videoUrl ? (
                   <video
                     className="project-video"
                     src={project.videoUrl}

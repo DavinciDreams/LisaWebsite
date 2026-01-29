@@ -29,7 +29,8 @@ export const projects: Project[] = [
     stars: 16,
     forks: 5,
     url: 'https://github.com/super-reality/SuperBeing',
-    gradient: 'linear-gradient(135deg, #06b6d4 0%, #10b981 100%)'
+    gradient: 'linear-gradient(135deg, #06b6d4 0%, #10b981 100%)',
+    videoUrl: 'https://www.youtube.com/embed/Ar54k0sMWe0'
   },
   {
     id: '4',
