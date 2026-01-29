@@ -9,7 +9,8 @@ export const projects: Project[] = [
     stars: 102,
     forks: 43,
     url: 'https://github.com/EtherealEngine/Digital-Beings',
-    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)'
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
+    imageUrl: '/images/digital-beings-robot.jpg'
   },
   {
     id: '2',
@@ -40,7 +41,8 @@ export const projects: Project[] = [
     stars: 17,
     forks: 5,
     url: 'https://github.com/AtlasFoundation/Thoth',
-    gradient: 'linear-gradient(135deg, #f59e0b 0%, #f43f5e 100%)'
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #f43f5e 100%)',
+    imageUrl: '/images/thoth-node-graph.jpg'
   },
   {
     id: '5',
