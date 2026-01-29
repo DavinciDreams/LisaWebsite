@@ -7,7 +7,7 @@ const Contact = () => {
         <h2 className="section-title">Let's Connect</h2>
         <div className="contact-content">
           <p className="contact-text">
-            Interested in collaborating on AI, decentralized intelligence, or the future of the metaverse?
+            Interested in collaborating on AI, decentralized intelligence, or spatial computing?
           </p>
           <div className="contact-links">
             <a
