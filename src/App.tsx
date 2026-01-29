@@ -5,7 +5,6 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { useScrollPosition } from './hooks/useScrollPosition'
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })

@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react'
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.pageYOffset > 100)
 
       // Update active section
       const sections = ['about', 'projects', 'contact']

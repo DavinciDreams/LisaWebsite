@@ -7,7 +7,7 @@ const Projects = () => {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null)
   const [ref, isVisible] = useIntersectionObserver(0.1)
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>, projectId: string) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = e.currentTarget
     const rect = card.getBoundingClientRect()
     const x = e.clientX - rect.left
@@ -38,7 +38,7 @@ const Projects = () => {
               className={`project-card ${hoveredCard === project.id ? 'hovered' : ''}`}
               onMouseMove={(e) => {
                 setHoveredCard(project.id)
-                handleMouseMove(e, project.id)
+                handleMouseMove(e)
               }}
               onMouseLeave={handleMouseLeave}
             >
