@@ -6,8 +6,13 @@
   z-index: 1000;
   backdrop-filter: blur(20px);
   background: rgba(10, 10, 15, 0.8);
-  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+  border-bottom: 2px solid transparent;
+  background-image: linear-gradient(rgba(10, 10, 15, 0.8), rgba(10, 10, 15, 0.8)),
+                    linear-gradient(90deg, #8b5cf6, #06b6d4);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 30px rgba(139, 92, 246, 0.1);
 }
 
 .nav-container {
@@ -27,6 +32,15 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -0.5px;
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.4));
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.6))
+          drop-shadow(0 0 20px rgba(6, 182, 212, 0.4));
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -49,6 +63,7 @@
   font-size: 0.95rem;
   font-weight: 500;
   color: #a1a1aa;
+  overflow: hidden;
 }
 
 .nav-number {
@@ -65,24 +80,35 @@
 
 .nav-link:hover {
   color: #ffffff;
-  background: rgba(139, 92, 246, 0.1);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.15));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
 }
 
 .nav-link:hover .nav-number {
   opacity: 1;
   color: #06b6d4;
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
 }
 
 .nav-link.active {
   color: #ffffff;
-  background: rgba(139, 92, 246, 0.15);
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(6, 182, 212, 0.2));
+  border: 2px solid transparent;
+  background-image: linear-gradient(rgba(139, 92, 246, 0.25), rgba(6, 182, 212, 0.2)),
+                      linear-gradient(135deg, #8b5cf6, #06b6d4);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4),
+              0 0 15px rgba(6, 182, 212, 0.2);
 }
 
 .nav-link.active .nav-number {
   opacity: 1;
   color: #06b6d4;
-  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+  text-shadow: 0 0 12px rgba(6, 182, 212, 0.8),
+               0 0 20px rgba(139, 92, 246, 0.4);
 }
 
 .nav-link::before {
@@ -90,9 +116,10 @@
   position: absolute;
   inset: 0;
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(6, 182, 212, 0.25));
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: -1;
 }
 
 .nav-link:hover::before {

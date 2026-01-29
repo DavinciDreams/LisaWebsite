@@ -7,6 +7,7 @@ export interface Project {
   forks: number
   url: string
   gradient: string
+  videoUrl?: string
 }
 
 export interface AboutCard {

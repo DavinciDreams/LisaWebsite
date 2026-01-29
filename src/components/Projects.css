@@ -39,6 +39,19 @@
   overflow: hidden;
 }
 
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: all 0.5s ease;
+}
+
+.project-card:hover .project-video {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 .project-gradient {
   width: 100%;
   height: 100%;

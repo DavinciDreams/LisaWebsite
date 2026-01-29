@@ -53,6 +53,17 @@ export const projects: Project[] = [
   },
   {
     id: '6',
+    title: 'The Nexus',
+    description: 'Immersive 3D social world on Hyperfy - Jump into a virtual space powered by Atlas Foundation.',
+    tags: ['WebGL', '3D', 'Social', 'Hyperfy'],
+    stars: 45,
+    forks: 12,
+    url: 'https://hyperfy.io/nexus',
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #f43f5e 100%)',
+    videoUrl: 'https://atlaswebsite-efvb1knpv-atlasfoundation.vercel.app/static/media/thenexus.b18e79edc14a6edb68a5.mp4'
+  },
+  {
+    id: '7',
     title: 'More Projects',
     description: 'Explore 200+ repositories covering AI, decentralized systems, and cutting-edge tech.',
     tags: ['Various', 'Open Source', 'Full Stack'],

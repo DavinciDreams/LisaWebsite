@@ -43,10 +43,22 @@ const Projects = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="project-image">
-                <div
-                  className="project-gradient"
-                  style={{ background: project.gradient }}
-                />
+                {project.videoUrl ? (
+                  <video
+                    className="project-video"
+                    src={project.videoUrl}
+                    muted
+                    loop
+                    playsInline
+                    onMouseEnter={(e) => e.currentTarget.play()}
+                    onMouseLeave={(e) => e.currentTarget.pause()}
+                  />
+                ) : (
+                  <div
+                    className="project-gradient"
+                    style={{ background: project.gradient }}
+                  />
+                )}
               </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
