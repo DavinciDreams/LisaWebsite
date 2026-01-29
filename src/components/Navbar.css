@@ -35,32 +35,47 @@
 }
 
 .nav-link {
-  background: none;
-  border: none;
+  background: transparent !important;
+  border: none !important;
   cursor: pointer;
   padding: 0;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   font-family: inherit;
-  font-size: 0.9375rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: #94a3b8;
   transition: color 0.3s ease;
+  outline: none;
+  box-shadow: none;
 }
 
 .nav-link:hover {
   color: #e2e8f0;
+  background: transparent !important;
 }
 
 .nav-link.active {
   color: #8b5cf6;
+  background: transparent !important;
+}
+
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link:active {
+  background: transparent !important;
 }
 
 .nav-number {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #64748b;
   transition: color 0.3s ease;
+  opacity: 1;
 }
 
 .nav-link:hover .nav-number {
@@ -89,10 +104,10 @@
   }
 
   .nav-link {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .nav-number {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
