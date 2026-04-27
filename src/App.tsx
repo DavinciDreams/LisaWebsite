@@ -3,9 +3,10 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
-import SocialGraph from './components/SocialGraph'
-import Contact from './components/Contact'
+import CosmicNucleus from './components/CosmicNucleus'
 import Footer from './components/Footer'
+import NavigationEnhancements from './components/NavigationEnhancements'
+import './utils/animations.css'
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -25,7 +26,7 @@ function App() {
   return (
     <div className="app">
       <div
-        className="gradient-bg"
+        className="gradient-bg gradient-animate"
         style={{
           background: `
             radial-gradient(circle at ${mousePosition.x * 100}% ${mousePosition.y * 100}%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
@@ -35,11 +36,11 @@ function App() {
         }}
       />
       <Navbar />
+      <NavigationEnhancements />
       <Hero />
-      <About />
+<About />
       <Projects />
-      <SocialGraph />
-      <Contact />
+      <CosmicNucleus />
       <Footer />
     </div>
   )
