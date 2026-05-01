@@ -149,6 +149,15 @@ export const socialGraphData: SocialGraph = {
       description: 'Next.js hackathon - AI-powered generosity platform',
       url: 'https://generous.rocks/about'
     },
+    {
+      id: 'dancerobot',
+      label: 'dancerobot.dance',
+      type: 'project',
+      size: 11,
+      color: '#ec4899',
+      description: 'AI-powered dance platform for creating and sharing choreographed robot dances',
+      url: 'https://dancerobot.dance'
+    },
     // Founder Skills
     {
       id: 'founder-vision',
@@ -240,6 +249,14 @@ export const socialGraphData: SocialGraph = {
       description: '3D spatial understanding'
     },
     {
+      id: 'animation',
+      label: 'Animation',
+      type: 'skill',
+      size: 7,
+      color: '#f97316',
+      description: 'Motion graphics and animation'
+    },
+    {
       id: 'web3',
       label: 'Web3/Blockchain',
       type: 'skill',
@@ -266,6 +283,7 @@ export const socialGraphData: SocialGraph = {
     { id: 'e13', source: 'lisa', target: 'atlas-website', weight: 2 },
     { id: 'e14', source: 'lisa', target: 'ee-maps', weight: 2 },
     { id: 'e15', source: 'lisa', target: 'generous', weight: 2 },
+    { id: 'e16', source: 'lisa', target: 'dancerobot', weight: 2 },
 
     // Organizations to Projects
     { id: 'e16', source: 'atlas', target: 'avatar-creator', weight: 3 },
@@ -290,6 +308,10 @@ export const socialGraphData: SocialGraph = {
     { id: 'e33', source: 'thoth', target: 'react', weight: 2 },
     { id: 'e34', source: 'thales', target: 'nodejs', weight: 2 },
     { id: 'e35', source: 'ee-maps', target: 'threejs', weight: 2 },
+    { id: 'e36', source: 'dancerobot', target: 'ai', weight: 3 },
+    { id: 'e37', source: 'dancerobot', target: 'webgl', weight: 2 },
+    { id: 'e38', source: 'dancerobot', target: 'threejs', weight: 3 },
+    { id: 'e39', source: 'dancerobot', target: 'animation', weight: 2 },
 
     // Lisa to Founder Skills
     { id: 'e36', source: 'lisa', target: 'founder-vision', weight: 4 },
@@ -305,6 +327,7 @@ export const socialGraphData: SocialGraph = {
     { id: 'e46', source: 'lisa', target: 'tensor-ml', weight: 3 },
     { id: 'e47', source: 'lisa', target: 'spatial-computing', weight: 3 },
     { id: 'e48', source: 'lisa', target: 'web3', weight: 2 },
+    { id: 'e49', source: 'lisa', target: 'animation', weight: 2 },
 
     // Organizations to Skills
     { id: 'e49', source: 'tensornetics', target: 'bci', weight: 3 },

@@ -9,6 +9,8 @@ export interface Project {
   gradient: string
   videoUrl?: string
   imageUrl?: string
+  featured?: boolean
+  isNew?: boolean
 }
 
 export interface AboutCard {

@@ -10,7 +10,8 @@ export const projects: Project[] = [
     forks: 43,
     url: 'https://github.com/EtherealEngine/Digital-Beings',
     gradient: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
-    imageUrl: '/images/digital-beings-robot.png'
+    imageUrl: '/images/digital-beings-robot.png',
+    featured: true
   },
   {
     id: '2',
@@ -20,7 +21,8 @@ export const projects: Project[] = [
     stars: 30,
     forks: 13,
     url: 'https://github.com/AtlasFoundation/AvatarCreator',
-    gradient: 'linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%)'
+    gradient: 'linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%)',
+    featured: true
   },
   {
     id: '3',
@@ -64,7 +66,8 @@ export const projects: Project[] = [
     forks: 12,
     url: 'https://hyperfy.io/nexus',
     gradient: 'linear-gradient(135deg, #8b5cf6 0%, #f43f5e 100%)',
-    videoUrl: 'https://atlaswebsite-efvb1knpv-atlasfoundation.vercel.app/static/media/thenexus.b18e79edc14a6edb68a5.mp4'
+    videoUrl: 'https://atlaswebsite-efvb1knpv-atlasfoundation.vercel.app/static/media/thenexus.b18e79edc14a6edb68a5.mp4',
+    featured: true
   },
   {
     id: '7',
@@ -86,5 +89,17 @@ export const projects: Project[] = [
     forks: 205,
     url: 'https://github.com/DavinciDreams?tab=repositories',
     gradient: 'linear-gradient(135deg, #06b6d4 0%, #f43f5e 100%)'
+  },
+  {
+    id: '9',
+    title: 'dancerobot.dance',
+    description: 'AI-powered dance platform for creating and sharing choreographed robot dances',
+    tags: ['AI', 'WebGL', 'Three.js', 'Animation', 'Creative Coding'],
+    stars: 0,
+    forks: 0,
+    url: 'https://dancerobot.dance',
+    gradient: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
+    imageUrl: '/images/dancerobot.svg',
+    isNew: true
   }
 ]
